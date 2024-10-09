@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablas en Html</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Tablas </h1>
+    <p>Son estructuras de datos que están formadas por columnas (vertical) y filas (horizontal) que son usadas para organizar y ordenar información.</p>
+    <p>En HTML se usan las etiquetas de table para iniciar la estructura,luego usamos la etiqueta TR para las filas y  y TD para dividir las filas en celdas como columnas (en caso de agregar encabezado usamos TH.)</p>
+    <p>Ejemplo de una tabla sin encabezado:</p>
+    <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellidos</td>
+            <tr>
+            </tr>
+                <td>Pahola</td>
+                <td>Teobal</td>
+         </tr>
+         <tr>
+            <td>Karim</td>
+            <td>Gutierrez</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>Gómez</td>    
+        </tr>
+        </table>
+    <p>Ejemplo de una tabla con encabezado</p>
+    <table>
+    <table border="1">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellidos</td>
+        <tr>
+        </tr>
+            <td>Pahola</td>
+            <td>Teobal</td>
+     </tr>
+     <tr>
+        <td>Karim</td>
+        <td>Gutierrez</td>
+    </tr>
+    <tr>
+        <td>Gabriel</td>
+        <td>Gómez</td>    
+    </tr>
+    </table>
+    <p>Para poder combinar celdas , vamos a usar 2 etiquetas importantes, una llamada COLSPAN y ROWSPAN,la primera combina en horizontal y la segunda en vertical. Por ejemplo: </p>   
+    <table border="1">
+        <tr>
+            <th>Campo 1</th>
+            <th>Campo 2</th>
+            <th>Campo 3</th>
+            <th>Campo 4</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td Colspan="2">Dato 3 y 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Dato 5 y 9</td>
+            <td>Dato 6</td>
+            <td>Dato 7</td>
+            <td>Dato 8</td>
+        </tr>
+        <tr>
+            <td>Dato 10</td>
+            <td>Dato 11</td>
+            <td>Dato 12</td>
+        </tr>
+
+    </table>
+    <h2>Práctica Tabla 1</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Goles</th>
+            <th>Partidos Jugados</th>
+        </tr>
+        <tr>
+            <td>Raúl</td>
+            <td>Jimenéz</td>
+            <td>2</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Cristiano</td>
+            <td>Ronaldo</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Karim</td>
+            <td>Benzemá</td>
+            <td>1</td>
+            <td>4</td>
+        </tr>
+        </table>
+    <h2>Práctica Tabla 2</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Goles</th>
+            <th>Partidos Jugados</th>
+            <th>UCL octavos</th>
+            <th>UCL cuartos</th>
+            <th>UCL semifinal</th>
+            <th>UCL Final</th>
+        </tr>
+        <tr>
+            <td>Raúl</td>
+            <td>Jimenéz</td>
+            <td>2</td>
+            <td>20</td>
+            <td colspan="3">Participó</td>
+            <td>No participó</td>
+        </tr>
+        <tr>
+            <td>Cristiano</td>
+            <td>Ronaldo</td>
+            <td>10</td>
+            <td>10</td>
+            <td colspan="3">Participó</td>
+            <td>No participó</td>
+
+        </tr>
+        <tr>
+            <td>Karim</td>
+            <td>Benzemá</td>
+            <td>1</td>
+            <td>4</td>
+            <td colspan="4">Participó</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>Lainez</td>
+            <td>10</td>
+            <td>10</td>
+            <td colspan="4">Participo</td>
+        </tr>
+        </table>
+    <h2>Práctica Tabla 3</h2>
+    <table>
+        <th></th>
+    </table>
+    <table border="1">
+        <tr>
+            <th>Nombre equipo</th>
+            <th>Liga</th>
+            <th>Número PJ (partidos jugados) </th>
+            <th>Número de Pg (Partidos ganados)</th>
+            <th>Participó en Copa</th>
+            <th>Goles a favor</th>
+            <th>Goles en contra</th>
+            <th>Diferencia de goles</th>
+            <th>Calificó a UCL</th>
+        </tr>
+        <tr>
+            <td>Juventus</td>
+            <td>Italiana</td>
+            <td rowspan="10">20</td>
+            <td>16</td>
+            <td rowspan="10">Si</td>
+            <td>100</td>
+            <td>20</td>
+            <td>80</td>
+            <td rowspan="10">Si</td>
+        </tr>
+        <tr>
+            <td>Real Madrid</td>
+            <td rowspan="3">Española</td>
+            <td>19</td>
+            <td>110</td>
+            <td>10</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Barcelona</td>
+            <td>19</td>
+            <td>99</td>
+            <td>9</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Atlético de Madrid</td>
+            <td>16</td>
+            <td>90</td>
+            <td>40</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Porto</td>
+            <td>Portuguesa</td>
+            <td>15</td>
+            <td>50</td>
+            <td>10</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Wolverhampton</td>
+            <td rowspan="3">Inglesa</td>
+            <td>16</td>
+            <td rowspan="3">100</td>
+            <td>51</td>
+            <td>49</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Manchester United</td>
+            <td rowspan="2">19</td>
+            <td>10</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Manchester City</td>
+            <td>15</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>París</td>
+            <td>Francesa</td>
+            <td>15</td>
+            <td>90</td>
+            <td>10</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Milán</td>
+            <td>Italiana</td>
+            <td>19</td>
+            <td>100</td>
+            <td>20</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <p>Existe una forma para estructurar tablas, usaodn etiquetas THEAD (para cabecera), TBODY (para el cuerpo de la tabla)  y TFOOT para el pie de la tabla, teniendo como complemento a las tablas la opción de CAPTION para agregar titulos a las tablas</p>
+    <table>
+        <caption>Calificaciones de Alumnos de 3A </caption>
+        <thead>
+            <tr>
+                <th>Nombre completo</th>
+                <th>Especialidad</th>
+                <th>Calificación p1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gomez Solis Angel Gabriel</td>
+                <td>Programación</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gutierrez Rodriguez Karim Azael</td>
+                <td>Programación</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Rojas Rodriguez Aldo David</td>
+                <td>Programación</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Teobal Palacios Dayana Pahola</td>
+                <td>Programación</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Calificaciones de parcial 1 (asistencia, participación, actividades y Evaluación</td>
+                
+        </tfoot>
+    </table>
+</body>
+</html>

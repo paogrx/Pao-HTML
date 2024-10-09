@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datos de usuario</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <h1>Datos de Usuario</h1>
+    <img/ src="img/registrodeusuario.png" width="150"> <br>
+    <label><strong><i>Nombre:</i></strong></label> <br>
+    <br>
+    <input type="text" name="texto1" placeholder="Nombres y Apellidos"> <br>
+    <br>
+    <label><strong>Correo electrónico:</strong></label> <br>
+    <br>
+    <input type="text" name="texto2" placeholder="ejemplo@correo"> <br>
+    <br>
+    <label><strong>Contraseña</strong></label> <br>
+    <input type="password" name="Contraseña" placeholder="8 dígitos" maxlength="8" pattern="\d{3}" required> <br>
+    <br>
+    <label><strong>Sexo:</strong></label> <br>
+    <input type="radio" name="Sexo" value="Masculino"> <label><strong>Masculino</strong></label>
+    <input type="radio" name="Sexo" value="Femenino"> <label><strong>Femenino</strong></label> <br>
+    <br>
+    <input type="checkbox" name="casillasterminos" value="op1"> <i><label><strong>Acepto los términos y Condiciones</strong></label></i> <br>
+    <input type="checkbox" name="casillasterminos" value="op2"> <i><label><strong>Acepto los términos Privacidad</strong></label></i> <br>
+    <br>
+    <form>
+        <input type="reset" name="btn1" value="Aceptar">
+        <input type="submit" name="btn2" value="Restablecer">
+    </form>
+    <br>
+    <table border="1">
+        <tr>
+            <th colspan="4">Paquetería</th>
+        </tr>
+        <tr>
+            <th>Municipio</th>
+            <th>Tipo envío</th>
+            <th>Días de entrega</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Veracruz</td>
+            <td>Estandar</td>
+            <td>2 días</td>
+            <td rowspan="6">De acuerdo al producto</td>
+        </tr>
+        <tr>
+            <td>Full</td>
+            <td>1 día</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Boca del río</td>
+            <td>Estándar</td>
+            <td>2 días</td>
+        </tr>
+        <tr>
+            <td>Full</td>
+            <td>1 día</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Medellín</td>
+            <td>Estándar</td>
+            <td>2 días</td>
+        </tr>
+        <tr>
+            <td>Full</td>
+            <td>1 día</td>
+        </tr>
+        </table>
+
+    <br>
+    <h1>Datos de envío y Método de pago</h1>
+    <img src="img/estafeta.png" width="200"> <br>
+    <label><strong>Dirección:</strong></label> <br>
+    <br>
+    <input type="text" name="Dirección" placeholder="Calle,Núm y Colonia"> <br>
+    <br>
+
+    <label><strong>Municipio</strong></label> <br>
+    <br>
+    <select>
+        <option value="Veracruz">Veracruz</option>
+        <option value="Boca del rio">Boca del río</option>
+        <option value="Medellín">Mdellín</option>
+    </select>
+    <br>
+    <br>
+    <label><strong>Codigo postal</strong></label> <br>
+    <br>
+    <input type="text" name="Código" placeholder="Ingresa 5 digitos" maxlength="5" pattern="\d{5}" required>
+    <br>
+    <br>
+    <label><strong>Tipo de envío</strong></label> <br>
+    <br>
+    <select>
+        <option value="Estandar">Estandar</option>
+        <option value="Full">Full</option>
+    </select>
+    <br>
+    <br>
+    <label><strong>Método de Pago</strong></label> <br>
+    <br>
+    <select>
+        <option value="Crédito">Crédito</option>
+        <option value="Débito">Débito</option>
+    </select>
+    <br>
+    <br>
+    <label><strong>Cupón</strong></label> <br>
+    <br>
+    <input type="text" name=" cupón" maxlength="4" placeholder="4 dígitos" pattern="\d{4}" required > <br>
+    <br>
+    <label><mark></mark></label>    
+</body>
+
+</html>

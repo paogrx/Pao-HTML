@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datos Bancarios</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <strong><h1>Registro de datos</h1></strong>
+    <img src="img/Mastercard.png"alt="Mastercard" width="50">
+    <img src="img/visa.png" alt="Visa" width="110"> <br>
+    <img src="img/registrodeusuario.png" alt="Registro" width="110"  ><br>
+    <label><strong><i>Nombre:</i></strong></label> <br>
+    <br>
+    <input type="text" name="texto1" placeholder="Nombre"> <br>
+    <br>
+    <label><strong><i>Apellidos:</i></strong></label> <br>
+    <br>
+    <input type="text" name="texto3" placeholder="Apellido Paterno">
+    <input type="text" name="texto4" placeholder="Apellido Materno"> <br>
+    <br>
+    <label><strong><i>Edad:</i></strong></label> <br>
+    <br>
+    <input type="number" name="Rango_edad" min="18" placeholder="Edad"> <br>
+    <label><strong><i>Sexo:</i></strong></label> <br>
+    <br>
+    <input type="radio" name="sexo" value="Masculino"> <strong><label><i>Masculino</i></label></strong>
+    <input type="radio" name="sexo" value="Femenino"> <strong><label><i>Femenino</i</label></strong>
+    <br>
+    <br>
+    <label><strong>Fecha de nacimiento:</strong></label> <br>
+    <br>
+    <input type="date" name="Fecha de nacimiento"> <br>
+    <br>
+    <label><strong>Tipo de tarjeta:</strong></label> <br>
+    <br>
+    <select>
+        <option value="op1">Crédito</option>
+        <option value="op2">Débito</option>
+    </select> <br>
+    <br>
+    <label><strong><i>Número de tarjeta:</i></strong></label> <br>
+    <br>
+    <input type="text" name="Notarjeta" maxlength="16" pattern="\d{3}" required placeholder="Número de tarjeta"> <br>
+    <br>
+    <label><strong><i>Vigencia mm/aa (mes y año) :</i></strong></label> <br>
+    <br>
+
+    <select>
+        <option value="mes1">01</option>
+        <option value="mes2">02</option>
+        <option value="mes3">03</option>
+        <option value="mes4">04</option>
+        <option value="mes5">05</option>
+        <option value="mes6">06</option>
+        <option value="mes7">07</option>
+        <option value="mes8">08</option>
+        <option value="mes9">09</option>
+        <option value="mes10">10</option>
+        <option value="mes11">11</option>
+        <option value="mes12">12</option>
+    </select>
+    <select>
+        <option value="año1">2024</option>
+        <option value="año2">2025</option>
+        <option value="año3">2026</option>
+        <option value="año4">2027</option>
+        <option value="año5">2028</option>
+        <option value="año6">2029</option>
+
+    </select>
+    <br>
+    <br>
+    <label><strong><i>CVV:</i></strong></label> <br>
+    <br>
+    <input type="password" maxlength="3" pattern="\d{3}" required> <br>
+    <input type="checkbox" name="casillasterminos" value="op1"> <i><label><strong>Acepto los términos de Privacidad</strong></label></i> <br>
+    <input type="checkbox" name="casillasterminos" value="op2"> <i><label><strong>Acepto las Condiciones de uso</strong></label></i> <br>
+    <br>
+    <br>
+    <form>
+        <input type="reset" name="btn1" value="Aceptar">
+        <input type="submit" name="btn2" value="Restablecer">
+    </form>
+</body>
+
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Componentes para formularios</h1>
+    <h2>LABEL</h2>
+    <p>Es un componente que se utiliza para asociar un texto descriptivo. Su Objetivo es proporcionar una descripción clara, que facilíta la comprensión en el formulario por ejemplo: </p>
+    <label>Nombre:</label> <br>
+    <label>Apellidos: </label>
+    <hr>
+    <h2>INPUT</h2>
+    <P>Estos componentes permiten a el usuario ingresar datos en un formulario y puede variar de acuerdo al tipo de dato que recopile.Entre sus atributos estan TYPE y NAME, el primero sirve para agregar el tipo de dato a ingresar , como TEXT, password,email, etc. El segundo define el nombre como un identificador, por ejemplo :</P>
+    <p>Entrada tipo texto: </p> <input type="Text" name="nombre"> 
+    <p>Entrada tipo contraseña:</p> <input type="password" name="contraseña">
+    <p>Entrada tipo número:</p> <input type="number" name="edad">
+    <p>Entrada tipo date: </p> <input type="date" name="fecha">
+    <p>Entrada tipo fecha y hora:</p> <input type="datetime-local" name="Fecha2">
+    <p>Entrada tipo hora: </p> <input type="time" name="hora">
+    <p>Entrada tipo mes: </p> <input type="month" name="mes">
+    <p>Entrada tipo semana:</p> <input type="week" name="semana">
+    <br>
+    <h2>Atributos para tipo Number</h2>
+    <p>Para usar un campo numerico con rangos, utilizamos los atributos MIN y MAX,para determinar el valor inicial y el limite máximo</p>
+    <input type="number" name="num_rango" min="1" max="18">
+    <p>El atributo STEP, especifica el incremento o disminución que tendrá</p>
+    <input type="number" name="num_rango2" min="1" max="19" step="2"> <br>
+    <p>El atributo MAXLENGTH, limita la cantidad de caracteres que se pueden ingresar y el atributo MINLENGTH es la cantidad minima</p>
+    <input type="text" name="length" maxlength="10" minlength="1">
+    <p>El atributo pattern se utiliza para especificar una expresion regular que debe cumplirse para que el campo de entrada sea valido, por ejemplo:.</p>
+    <p>Ejemplo con valores mumericos y que solo acepte 3 digitos: </p>
+    <input type="text" name="pattern1" pattern="[0-3]{1,3}">
+    <h2>Atributo PLACEHOLDER y REQUIRED</h2>
+    <p>El PLACEHOLDER sirve para agregar sugerencias en el llenado del formulario, como un apoyo visual, se imprime dentro de los campos y al hacer clic desaparece (solo es visible si esta vacío) por su lado REQUIRED sirve para realizar una vadilacion donde no podemos enviar los datos si esta vacio (solo funciona usando el elemento form y un botom que funciones como detonante). (form sirve para agrupar todos los componentes que componen mi formulario</p>
+    <p>ejemplo de placeholder:</p>
+    <input type="text" name="texto1" placeholder="Nombre completo">
+    <p>ejemplo de vadilación REQUIRED</p>
+    <form>
+        <input type="text" name="texto2" required>
+        <input type="submit" name="botón 1" value="Aceptar">
+    </form>
+    <h2>Botones</h2>
+    <p>Los botones sirven para realizar una accion, por ejemplo, si llenamos un formulario y queremos registrar o simplemente pasar valores, requerimos un boton que realize cierta accion, exite otros que restablecen valores, uno le da el sentido que queramos de acuerdo al objetivo(funcionan siemore y cuando este dentro de un form)</p>
+    <input type="submit" name="btn1" value="enviar"> <br>
+    <input type="reset" name="btn2" value="Restablecer">
+    <p>existe una version de botones usando la etiqueta button, que a diferencia de los anteriores tiene mayor felxibilidad, por ejemplo: </p>
+    <button>Aceptar</button>
+    
+</body>
+</html>
